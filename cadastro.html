@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Cliente fofo</title>
+</head>
+<style> 
+table {
+    margin: 0 auto;
+    width: 60%;
+}
+input, select {
+    width: 100%;
+    border: 2px solid #ffc8dd; 
+    border-radius: 6px;
+    padding: 5px;
+}
+button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffc8dd;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+button:hover {
+    background-color: #ffb3c1;
+}
+</style>
+<body>
+   <form action="cadastro_client.php" method="post">
+       <table>
+           <tr> 
+               <td><label>Nome</label></td>
+               <td><input type="text" name="nome" required></td>
+           </tr>
+           <tr>
+               <td><label>Email</label></td>
+               <td><input type="email" name="email"></td>
+           </tr>
+           <tr>
+               <td><label>UF</label></td>
+               <td>
+                   <select name="uf">
+                       <option value="MG">MG</option>
+                       <option value="SC">SC</option>
+                       <option value="RJ">RJ</option>
+                       <option value="SP">SP</option>
+                       <option value="ES">ES</option>
+                       <option value="AM">AM</option>
+                       <option value="AL">AL</option>
+                       <option value="MT">MT</option>
+                       <option value="MS">MS</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2" style="text-align: center;">
+                   <button type="submit">Cadastrar</button>
+               </td>
+           </tr>
+           <td><a href="idex.html">Voltar</a></td>
+       </table>
+   </form>
+</body>
+</html>
